@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/js/account.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <!-- nav Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand fst-italic fw-bold fs-3 text-danger" href="index.html">Timer-Zone</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-dark" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link text-dark" href="Catageroy.html">Category</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link text-dark" href="Product.html">Product Details</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link text-dark" href="account.html">Account </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav End -->
+    <!-- Banner  -->
+    <div class="d-flex flex-row justify-content-center bg-dark ">
+        <img src="./assets/images/account/account-1.png" class="img-fluid" alt="">
+    </div>
+    
+
+    <!-- form start -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-8 mx-auto bg-warning rounded border shadow border-dark">
+                <form>
+
+                    <h2 class="text-danger text-center mt-3 fw-bold">Sign Up</h2>
+                    <!-- first name start -->
+                    <div class="">
+                        <label for="exampleInputFirstName" class="form-labe ">First Name</label>
+                        <input type="text" class="form-control shadow" placeholder="First Name" id="firstName">
+                        <p id="er1" class="text-danger fw-bold"></p>
+                    </div>
+                    <!-- first name End -->
+
+
+                    <!-- email start -->
+                    <div class="mt-4">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control shadow" placeholder="email" id="em">
+                        <p id="er3" class="text-danger fw-bold"></p>
+                    </div>
+                    <!-- email End -->
+
+                    <!-- password Start -->
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-6">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control shadow" placeholder="Password" id="pw">
+                            <p id="er4" class="text-danger fw-bold"></p>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputCpassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control shadow" placeholder="Confirm Password" id="cpw">
+                            <p id="er5" class="text-danger fw-bold"></p>
+                        </div>
+                    </div>
+                    <!-- password End -->
+
+                    <!-- Number start -->
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-6">
+                            <label for="exampleInputDateOfBirth1" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control shadow" placeholder="date of Birth" id="dob">
+                            <p id="er6" class="text-danger fw-bold"></p>
+                        </div>
+                        <div class="col">
+                            <label for="exampleInputNumber1" class="form-label">Phone Number</label>
+                            <input type="number" class="form-control shadow" placeholder="Phone Number" id="num">
+                            <p id="er7" class="text-danger fw-bold"></p>
+                        </div>
+                    </div>
+                    <!-- Number End -->
+
+                    <!-- Gender start -->
+                    <div id="gender">
+                        <p class="mt-4">Gender</p>
+                        <input type="radio" name="fav" value="MALE">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="fav" value="FEMALE">
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="fav" value="OTHER">
+                        <label for="Other">Other</label><br>
+                        <p id="er8" class="text-danger fw-bold"></p>
+                    </div>
+                    <!-- Gender End -->
+
+                    <!-- country -->
+                    <div class="col-md-4 mt-4">
+                        <label for="inputState" class="form-label">Country</label>
+                        <select id="cou" class="form-select shadow">
+                            <option></option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Japan</option>
+                            <option>Poland</option>
+                            <option>Pakistan</option>
+                        </select>
+                        <p id="er9" class="text-danger fw-bold"></p>
+                    </div>
+
+                    <!-- checkbox start -->
+                    <div class="mb-3 form-check mt-4">
+                        <input type="checkbox" class="form-check-input" id="Check">
+                        <label class="form-check-label" for="Check1"> Agree to Privacy Policy</label>
+                        <p id="er10" class="text-danger fw-bold"></p>
+                    </div>
+                    <!-- checkbox End -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success mb-3 " id="btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- form End -->    
+    <!-- modal start -->
+    <div class="modal border-dark" id="modelForm">
+        <div class="modal-dialog ">
+            <div class="modal-content bg-white">
+                <div class="modal-header border-0">
+                    <h3 class="modal-title fw-bold text-success mx-auto" id="reg">Thanks for Regestration </h3>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-body text-dark fw-bold fs-3 text-center">Thanks For Your Time </p>
+                    <p class="fw-bold fs-3 text-center text-info">Give Your FeedBack..!</p>
+                    <div class="text-center fs-3">
+                        <i class="fa fa-star" aria-hidden="true" id="st1"></i>
+                        <i class="fa fa-star" aria-hidden="true" id="st2"></i>
+                        <i class="fa fa-star" aria-hidden="true" id="st3"></i>
+                        <i class="fa fa-star" aria-hidden="true" id="st4"></i>
+                        <i class="fa fa-star" aria-hidden="true" id="st5"></i>
+                        <p id="review" class="fs-4 fw-bold"></p>
+                    </div>
+                    <div class="form-floating mt-4">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">leave a comment here..!</label>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <a href="" type="button" class="btn btn-success" data-bs-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model end -->
+    <!-- form End -->
+
+    <!-- footer start -->
+    <footer class="bg-dark text-light text-center text-md-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Timer Zone Company</h5>
+
+                    <p>
+                        The Watches has ergonomic shoulder straps and a padded back that will keep you comfortable.
+                        Apart from three main compartments, it has an organiser sleeve and a padded laptop sleeve.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-2">About</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="text-white">Company</p>
+                        </li>
+                        <li>
+                            <p class="text-white">Corporate News</p>
+                        </li>
+                        <li>
+                            <p class="text-white">Press Center</p>
+                        </li>
+                        <li>
+                            <p class="text-white">Careers</p>
+                        </li>
+                        <li>
+                            <p class="text-white">Brands</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+                    <h5 class="">Contact Us In</h5>
+                    <ul class="list-unstyled mb-0">
+                        <a href=""><i class="fa fa-facebook-official me-2 fs-2"></i></a>
+                        <a href=""> <i class="fa fa-amazon me-2 fs-2 text-white"></i></a>
+                        <a href=""><i class="fa fa-instagram me-2 fs-2 text-danger"></i></a>
+                        <a href=""><i class="fa fa-twitter fs-2"></i></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-dark text-info">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Timer.@gmail.com</a>
+        </div>
+    </footer>
+    <!-- footer End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
